@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const dotenv = require('dotenv');
 const connectDB = require('./config/db');
+const homeRoutes = require('./routes/main')
 
 
 dotenv.config({path: './config/.env'});
@@ -18,7 +19,7 @@ app.use(express.json())
 
 // routes
 
-
+app.use('/', homeRoutes)
 
 
 app.listen(process.env.PORT, () => console.log(`It is alive on port ${process.env.PORT}`))
