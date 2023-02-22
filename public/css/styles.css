@@ -71,7 +71,7 @@ input{
   height: 75px;
 }
 
-button {
+#google, button {
   background-color: var(--primary-btn-color);
   color: white;
   font-size: 1.5rem;
